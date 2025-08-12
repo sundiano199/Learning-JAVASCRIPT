@@ -1,125 +1,97 @@
-// STRINGS - text characters in double or single quotes
-const firstName = 'John'
-const lastName = 'Doe'
-const middleName = 'Agba'
+// CONDITIONAL STATEMENT
+// syntax
+// if (condition) {
+//  action
+//  lines of code
+//}
 
-// STRING PROPERTIES length
-console.log(firstName.length, middleName.length);
-// string concatenation (joining of strings)
-const fullName = firstName + " " + lastName;
-console.log(fullName);
-console.log(fullName.length);
+if (1 < 2) {
+    console.log("Ola");
+ }
 
-// STRING METHODS - built in js functions that works on strings
-// toUpperCase, toLowerCase
-console.log(fullName.toUpperCase());
-console.log(fullName.toLowerCase());
+ let balance = 6000;
+ let amount = 2000;
 
-// startsWith, endsWith, includes
-console.log(fullName.startsWith("Joh"));
-console.log(fullName.endsWith("oe"));
-console.log(fullName.includes("n D"))
+ if (balance >= amount) {
+    balance -= amount; //uber
+    console.log ("Transaction succesfull, balance is " + balance);
+ }
 
-// replace and replaceAll
-console.log(fullName.replace("o", "#"));
-console.log(fullName.replaceAll("o", "#"));
+ // determine if the password is long enough ( >= 10 )
+ // improve your logic check if the password contains '#' - good password
+ const password = "#password1234";
+ if (password.length >= 10 && password.includes("#")){
+    console.log("Password is good enough");    
+}
+const age = 19;
+if (age >= 18) {
+    console.log("You are eligible to vote");
+}
 
-const myEmail = "iamdyclef@gmail.com";
-console.log(myEmail.length);
-console.log(myEmail.toLocaleUpperCase());
-console.log(myEmail.replace("@", "*"));
-console.log(myEmail.includes("m"));
-console.log(myEmail.endsWith("google.com"));
-
-// charAt, indexOf, lastIndexOf
-console.log(myEmail.charAt(2));
-console.log(myEmail.indexOf("c"));
-console.log(myEmail.lastIndexOf("i"));
-
-// concat, trim, slice, substring, substr
-
-console.log(fullName.concat(" is my name"))
-
-//trim removes whitespace
-
-const username = "      user001    "
-console.log(username);
-console.log(username.trim());
-console.log(username.trimStart());
-console.log(username.trimEnd());
-
-// Extract portiond of a string
-const surname = 'Brooke'
-// slice, substring (start, end (non-inclusive))
-console.log(surname.slice(2, 5)); // ook
-console.log(surname.substring(1));
-
-// subtr (start, number of characters)
-console.log(surname.substr(2, 2));
-
-const myOtherName = "Idan Gan Gan"
-
-// concatenation
-const author = 'Chinua Achebe';
-const bookTitle = "Things Fall Apart";
-const yearPublished = 1997;
-
-// the book things fall apart written by chinua achebe was published in the year 1997
-
-// template literals `${varName}`
-const summary = `The book ${bookTitle} was authored by ${author.toUpperCase()}`;
+// IF ELSE statement
+if (9 > 7) {
+    console.log("YES");
+} else {
+    console.log("NO");
+}
 
 
-// Chinua Achebe wrote the book things fall apart 
-const summary2 = `${author} wrote the book ${bookTitle}`
-console.log(summary2);
+if (balance >= amount) {
+    balance -= amount; //uber
+    console.log ("Transaction succesfull, balance is " + balance);
+ } else {
+    console.log("Insufficient Funds");
+    
+ }
 
-// quote Tinubu said and i quote 'Let the poor breathe'
-const quote = `Tinubu said and i quote 'Let the poor breathe'`
-console.log(quote);
+ const num = 76
+ if (num > 0) {
+    console.log("It's a positive number");
+ } else {
+    console.log("It's a negtive number");
+ }
 
-// CLASS WORK
-const greet = "Hello World";
-console.log(greet.toUpperCase());
+ // write an if else statement to determine if a number is odd or even
+ // (nums divided by 2 without remainder)
+ const num1 = 6;
+ if (num1 % 2 == 0) {
+    console.log("It's an even number");
+    
+ } else {
+    console.log("It's an odd number");
+    
+ }
+// MULTIPLE ELSE IF
 
-const topic = "JAVASCRIPT"; 
-console.log(topic.toLowerCase());
+// Overpopulated >= 300, Underpopulated <= 50 and balanced population > 50 and < 300
+const censusResult = 500;
+if (censusResult >= 300) {
+    console.log("OVER POPULATED");    
+} else if (censusResult <= 50) {
+    console.log("UNDER POPULATED");
+    
+} else {
+    console.log("BALANCED POPULATION"); 
+}
 
-const greet1 = "Hello";
-console.log(greet1.charAt(0));
+// lottery system for a company a b c (winner) d
+const usersChoice = "a";
+if (usersChoice === "c") {
+    console.log("Congratulations");
+} else {
+    console.log("Try again");
+}
 
-console.log(greet.substring(6, 11) )
+// Lottery system for a company 4 choices a (trip to dubai) b (try again) c (car) d (blender)
 
-
- const cat1 = "I like cats"
- console.log(cat1.replace("cats", "dogs"))
-
- 
- console.log(greet.startsWith("Hello"));
-
- const vocabulary = "Sokratis Papastathopoulos";
- console.log(vocabulary.length);
-
-const nickName = "Emmanuel"
-const favClub = "Chelsea"
-const mySelf = `i am ${nickName} and my favourite club is ${favClub}`
- console.log(mySelf);
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const usersChoiceB = "a";
+if (usersChoiceB === "a") {
+    console.log("TRIP TO DUBAI");    
+} else if (usersChoiceB === "c") {
+    console.log("Car");    
+} else if (usersChoiceB === "d") {
+    console.log("Blender");    
+}else {
+    console.log("Try Again");
+    
+}

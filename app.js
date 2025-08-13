@@ -1,97 +1,40 @@
-// CONDITIONAL STATEMENT
-// syntax
-// if (condition) {
-//  action
-//  lines of code
-//}
 
-if (1 < 2) {
-    console.log("Ola");
- }
+let  teamA = 96 + 108 + 89;
+let teamB = 88 + 91 + 110;
+let teamAavg= teamA / 3;
+let teamBavg = teamB/ 3;
 
- let balance = 6000;
- let amount = 2000;
-
- if (balance >= amount) {
-    balance -= amount; //uber
-    console.log ("Transaction succesfull, balance is " + balance);
- }
-
- // determine if the password is long enough ( >= 10 )
- // improve your logic check if the password contains '#' - good password
- const password = "#password1234";
- if (password.length >= 10 && password.includes("#")){
-    console.log("Password is good enough");    
-}
-const age = 19;
-if (age >= 18) {
-    console.log("You are eligible to vote");
-}
-
-// IF ELSE statement
-if (9 > 7) {
-    console.log("YES");
+if (teamAavg > teamBavg) {
+    console.log("Team A wins with an average score of " + teamAavg);    
+}  else if (teamBavg > teamAavg) {
+    console.log("Team B wins with an average score of " + teamBavg);
 } else {
-    console.log("NO");
+    console.log("It's a draw");    
 }
 
+// Example 2
+const item1 = 120;
+const item2 = 80;
+const item3 = 150;
+const totalCost = item1 + item2 + item3;
+const balance = 400;
+balance >= totalCost ? console.log("You can checkout") : console.log("Insufficient balance");
 
-if (balance >= amount) {
-    balance -= amount; //uber
-    console.log ("Transaction succesfull, balance is " + balance);
- } else {
-    console.log("Insufficient Funds");
-    
- }
+//Example 3
+const movieAge = 18;
+const userAge = 20;
+userAge >= movieAge ? console.log("You can watch the movie") : console.log("You're  not old enough to watch this movie");
 
- const num = 76
- if (num > 0) {
-    console.log("It's a positive number");
- } else {
-    console.log("It's a negtive number");
- }
+//Example 3
+const ticketPrice = 200;
+const discountAmount = 30;
+const userBalance = 350;
+const finalPrice = ticketPrice - discountAmount ;
+const member = false; 
+member ? console.log("Final price ticket is " + finalPrice) : console.log("Final price is " + ticketPrice);
+userBalance >= finalPrice || userBalance >= ticketPrice ? console.log("You can buy the football ticket") : console.log("You do not have enough money for the football ticket");
 
- // write an if else statement to determine if a number is odd or even
- // (nums divided by 2 without remainder)
- const num1 = 6;
- if (num1 % 2 == 0) {
-    console.log("It's an even number");
-    
- } else {
-    console.log("It's an odd number");
-    
- }
-// MULTIPLE ELSE IF
 
-// Overpopulated >= 300, Underpopulated <= 50 and balanced population > 50 and < 300
-const censusResult = 500;
-if (censusResult >= 300) {
-    console.log("OVER POPULATED");    
-} else if (censusResult <= 50) {
-    console.log("UNDER POPULATED");
-    
-} else {
-    console.log("BALANCED POPULATION"); 
-}
 
-// lottery system for a company a b c (winner) d
-const usersChoice = "a";
-if (usersChoice === "c") {
-    console.log("Congratulations");
-} else {
-    console.log("Try again");
-}
 
-// Lottery system for a company 4 choices a (trip to dubai) b (try again) c (car) d (blender)
 
-const usersChoiceB = "a";
-if (usersChoiceB === "a") {
-    console.log("TRIP TO DUBAI");    
-} else if (usersChoiceB === "c") {
-    console.log("Car");    
-} else if (usersChoiceB === "d") {
-    console.log("Blender");    
-}else {
-    console.log("Try Again");
-    
-}

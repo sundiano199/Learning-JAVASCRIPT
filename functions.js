@@ -173,3 +173,5 @@ console.log(containSubstring("Emmanuel", "Emma"));
 //Example minutes to seconds
 const minToSec = (minutes) => minutes * 60;
 console.log(minToSec(3));
+
+
